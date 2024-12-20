@@ -1,0 +1,46 @@
+def div(num1, num2):
+    # Perform division and return the result
+    return num1 / num2
+
+# Call the function and display the result
+result = div(10, 2)  # Example with 10 and 2
+print("Division Result:", result)
+
+
+def square(num):
+    # Calculate and return the square of the number
+    return num ** 2
+
+# Call the function and display the result
+result = square(5)  # Example with 5
+print("Square Result:", result)
+
+
+import random
+
+# Generate 5 random numbers
+random_numbers = [random.randint(1, 100) for _ in range(5)]
+print("Random Numbers:", random_numbers)
+
+# Find the maximum and minimum of the random numbers
+max_num = max(random_numbers)
+min_num = min(random_numbers)
+
+print("Maximum Number:", max_num)
+print("Minimum Number:", min_num)
+
+
+# Accept a name from the user
+name = input("Enter your name: ")
+
+# Display the name in lowercase
+print("Name in Lowercase:", name.lower())
+
+
+# Define a lambda function to check if a number is positive, negative, or zero
+check_number = lambda num: 'Positive' if num > 0 else 'Negative' if num < 0 else 'Zero'
+
+# Test the lambda function with different numbers
+print(check_number(10))   # Positive
+print(check_number(-5))   # Negative
+print(check_number(0))    # Zero
